@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Numismática - Catálogo de Moedas Raras</title>
+		<link rel="stylesheet" href="css/styles1.css">
+		<script src="js/jogo.js"></script>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<ul>
+					<li><a href="index.html">Início</a></li>
+					<li><a href="historia.html">História das Moedas</a></li>
+					<li><a href="catalogo.html">Catálogo</a></li>
+					<li><a href="jogo.html">Jogo</a></li>
+					<li><a href="contato.html">Contato</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<section>
+					<h1>Jogo Cara ou Coroa</h1>	
+					<p id="instrucoes">Escolha sua moeda:</p>
+					<div id="moedas">
+						<img src="ima/jogo/M1.png" alt="M1" class="jogo" onclick="escolherMoeda('M1')">
+						<img src="ima/jogo/M2.png" alt="M2" class="jogo" onclick="escolherMoeda('M2')">
+						<img src="ima/jogo/M3.png" alt="M3" class="jogo" onclick="escolherMoeda('M3')">
+						<img src="ima/jogo/M4.png" alt="M4" class="jogo" onclick="escolherMoeda('M4')">
+						<img src="ima/jogo/M5.png" alt="M5" class="jogo" onclick="escolherMoeda('M5')">
+					</div>
+					<div id="escolha-cara-coroa" style="display: none;">
+						<p>Agora, escolha "cara" ou "coroa":</p>
+						<img id="coroaEscolha" src="" alt="Coroa" class="imagem-escolha" onclick="jogar('CO')">
+						<img id="caraEscolha" src="" alt="Cara" class="imagem-escolha" onclick="jogar('CA')">
+					</div>
+					<div class="resultado" id="resultado"></div>
+					<img id="imagem-resultado" class="imagem-resultado" src="" alt="Resultado da moeda" style="display: none;">
+			</section>
+		</main>
+		<footer>
+			&copy; 2024 Numismática - Todos os direitos reservados.
+		</footer>
+		<script src="js/script.js"></script>
+	</body>
+</html>
